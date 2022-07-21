@@ -378,6 +378,7 @@ a {
 
 .reference {
   padding-top: 0;
+  padding-bottom: 94px;
 }
 .reference__list {
   display: -webkit-box;
