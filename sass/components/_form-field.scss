@@ -1,5 +1,5 @@
 .form-field {
-    margin-bottom: 10px;
+   
 
     &__label {
     display: block;
@@ -22,20 +22,22 @@
     padding: 11px 12px 11px 42px;
     outline: transparent;
 
-    }
-
-  &__input::placeholder {
+    &::placeholder {
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
     }
 
 
-    &__input:focus+&__icon {
+    &:focus+&__icon {
     fill: var(--accent-color);
     }
-    &__input:focus-within {
+    &:focus-within {
     border-color: var(--accent-color);
     }
+
+    }
+
+  
 
 
     &__icon {
