@@ -1,16 +1,16 @@
-.social-list {
+.sotial {
     display: flex;
     list-style: none;
     margin-top: 16px;
     justify-content: center;
     padding-left: 0;
-}
 
-.sotial__item:not(:last-child) {
+
+    &__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social__link {
+    &__link {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -22,23 +22,43 @@
     height: 44px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
-.sotial__icon {
+    &__icon {
     fill: currentColor;
     width: 20px;
     height: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+
+    &__link:hover,
+    &__link:focus {
+        background-color: #2196F3;
+    }
+
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: #FFFFFF;
+    }
+
 }
 
 
-.social__link:hover,
-.social__link:focus {
-    background-color: #2196F3;
+.sotial-list{
+    display: flex;
+    margin-top: 20px;
+
+    &__item--end:not(:last-child) {
+    margin-right: 10px;
+    }
+
+    &__link--footer {
+        color: #FFFFFF;
+        background: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
 
-.social__link:hover .sotial__icon,
-.social__link:focus .sotial__icon {
-    fill: #FFFFFF;
-}

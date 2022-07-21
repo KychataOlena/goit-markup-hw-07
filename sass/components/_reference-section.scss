@@ -1,21 +1,19 @@
 .reference {
     padding-top: 0;
-}
 
-
-
-.reference__list {
+    
+    &__list {
     display: flex;
     justify-content: space-between;
 }
 
-.reference__item {
+    &__item {
     display: flex;
     position: relative;
     padding-bottom: 0;
 }
 
-.reference__overlay {
+   &__overlay {
     display: block;
     position: absolute;
     width: 100%;
@@ -25,7 +23,10 @@
     bottom: 0;
 }
 
-.reference__overlay--uppercase {
+    &__overlay--uppercase {
 
     color: var(--text-white-color);
 }
+}
+
+

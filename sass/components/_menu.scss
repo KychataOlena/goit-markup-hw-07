@@ -1,43 +1,44 @@
+$logoWebcolor: black;
+
 .logo {
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 24px;
-}
 
-.logo__web {
+    
+    &__web {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
     color: #2196F3;
 
-}
+    }
 
-.logo__studio {
-    color: black;
+    &__studio {
+    color: $logoWebcolor;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
 
+    }
 }
+
 
 .menu {
     display: flex;
     align-items: center;
-}
 
-.menu__list {
+    &__list {
     display: flex;
     margin-left: 98px;
 }
 
-.menu__item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 50px;
-}
+    }
 
 
-
-
-.menu__link {
+    &__link {
     display: inline-flex;
     align-items: center;
     padding-top: 32px;
@@ -53,12 +54,12 @@
 
 
 
-.menu__link--current {
+   &__link--current {
     position: relative;
     color: var(--accent-color);
 }
 
-.menu__link--current::after {
+    &__link--current::after {
     position: absolute;
     display: block;
     content: "";
@@ -68,12 +69,12 @@
     background-color: var(--accent-color);
     border-radius: 2px;
 }
-
+    &__item:not(:last-child) {
+    margin-right: 48px;
+}
+}
 
 .auth-nav {
     margin-left: auto;
 }
 
-.menu__item:not(:last-child) {
-    margin-right: 48px;
-}
